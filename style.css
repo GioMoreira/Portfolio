@@ -5,7 +5,7 @@
 
 :root{
     --purple: #5b6ed6;
-    --green: #13c8b5;
+    --green: #15CDCB;
     --bg-dark: #212226;
     --light-grey: #e0dede;
 
@@ -63,6 +63,10 @@ header .container{
     height: fit-content;
 }
 
+header .container img{
+    display: none;
+}
+
 header .container h1{
     color: var(--green);
 }
@@ -84,17 +88,112 @@ nav{
 
 nav img{
     height: 45px;
+    margin-right: 100px;
+}
+
+nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 nav ul a{
     font-size: 24px;
     color: var(--green);
     text-decoration: none;
-    margin: 0 35PX;
 
+
+}
+
+nav ul a svg{
+    display: none;
 }
 
 section{
     height: 1500px;
     background: var(--bg-dark);
+}
+
+/* RESPONSIVIDADE */
+
+/* smalldesktop */
+@media (max-width: 1085px){
+    header .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    
+    header .container h2,h1{
+        align-self: start;
+    }
+
+ 
+    nav ul a{
+        font-size: 18px;
+    }
+}
+
+/* tablet */
+@media (max-width: 900px){
+
+
+
+    nav{
+        padding: 0 30px;
+    }
+
+    header .container img{
+        display: inline;
+        width: 200px;
+        margin-top: 60px;
+        
+    }
+
+    nav img{
+        display: none;
+        
+    }
+
+    nav ul{
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul a{
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+/* celular */
+
+@media(max-width:480px){
+    header .container{
+        padding: 0 40px;
+    }
+
+    header .container img{
+        width: 150px;
+    }
+
+    nav{
+        padding: 0 15px;
+    }
+
+    nav ul a{
+        font-size: 12px ;
+    }
+
+    nav ul a svg{
+        display: block;
+        margin: 0 auto 10px;
+    }
 }
