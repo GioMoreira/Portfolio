@@ -50,6 +50,14 @@ button{
     cursor: pointer;
 }
 
+.title-purple{
+    color: var(--purple);
+}
+
+.title-green {
+    color: var(--green);
+}
+
 header{
     height: calc(100vh - var(--menu-height));
     display: flex;
@@ -65,10 +73,6 @@ header .container{
 
 header .container img{
     display: none;
-}
-
-header .container h1{
-    color: var(--green);
 }
 
 header .container button{
@@ -94,13 +98,14 @@ nav img{
 nav ul{
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: end
 }
 
 nav ul a{
     font-size: 24px;
     color: var(--green);
     text-decoration: none;
+    margin: 0 20px;
 
 
 }
@@ -109,15 +114,55 @@ nav ul a svg{
     display: none;
 }
 
-section{
-    height: 1500px;
-    background: var(--bg-dark);
+.about-me {
+    display: flex;
+    padding: 100px;
 }
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container{
+    width: 50%;
+    position: relative;
+
+}
+
+.about-me .img-container img{
+    width: 60%;
+    height: 95%;
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.about-me .img-container .line{
+    width: calc(60% + 60px);
+    height: calc(95% + 60px);
+    border: 1px solid var(--purple);
+
+    position: absolute;
+    top: -25px;
+    left: calc(50% - 70%/2);
+}
+
+.about-me .img-container .line.green{
+    transform: rotate(-3.3deg);
+    border: 1px solid var(--green);
+}
+
+
+
+
+
 
 /* RESPONSIVIDADE */
 
 /* smalldesktop */
-@media (max-width: 1085px){
+@media (max-width: 1100px){
     header .container {
         width: 100%;
         display: flex;
@@ -134,6 +179,23 @@ section{
  
     nav ul a{
         font-size: 18px;
+    }
+
+    .about-me {
+        flex-direction: column;
+    }
+
+    .about-me .container{
+        padding-right: 0;
+
+    }
+
+    .about-me .img-container{
+        margin:  70px 0;
+    }
+
+    .about-me .container, .about-me .img-container{
+        width: 100%;
     }
 }
 
@@ -175,7 +237,8 @@ section{
 
 /* celular */
 
-@media(max-width:480px){
+
+@media(max-width:530px){
     header .container{
         padding: 0 40px;
     }
@@ -200,5 +263,9 @@ section{
     nav ul a svg{
         display: block;
         margin: 0 auto 10px;
+    }
+
+    .about-me .img-container .line{
+        left: calc(50% - 40%);
     }
 }
