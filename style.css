@@ -88,6 +88,8 @@ nav{
     position: sticky;
     top: 0;
     background: var(--bg-dark);
+
+    z-index: 99;
 }
 
 nav img{
@@ -131,7 +133,7 @@ nav ul a svg{
 }
 
 .about-me .img-container img{
-    width: 60%;
+    width: 50%;
     height: 95%;
     border-radius: 10px;
     display: block;
@@ -154,6 +156,43 @@ nav ul a svg{
     border: 1px solid var(--green);
 }
 
+.services{
+    text-align: center;
+    margin: 200px 0;
+}
+
+.services-container, .portfolio-container{
+    display: flex;  
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 60px auto 0;
+
+}
+
+.services .services-container .service-card{
+    background: #2F3034 ;
+    border: 1px solid var(--purple);
+    border-radius: 16px;
+    max-width: 360px;
+    padding: 3%;
+}
+
+.services .service-card img{
+    margin-bottom: 40px;
+}
+
+.service-card + .service-card{
+    margin-left: 10px;
+}
+
+.portfolio{
+    padding: 0 100px;
+    text-align: center;
+}
+
+.portfolio img{
+    max-width: 300px;
+}
 
 
 
@@ -197,6 +236,25 @@ nav ul a svg{
     .about-me .container, .about-me .img-container{
         width: 100%;
     }
+
+    .services{
+        margin-top: 100px;
+    }
+
+    .services .services-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card{
+        height: 394px;
+    }
+
+    .service-card + .service-card{
+        margin-left: 0;
+        margin-top: 30px;
+    }
 }
 
 /* tablet */
@@ -239,12 +297,19 @@ nav ul a svg{
 
 
 @media(max-width:530px){
+
+    header h2{
+        max-height: fit-content;
+        align-self: baseline;
+    }
+
     header .container{
         padding: 0 40px;
     }
 
     header .container img{
         width: 150px;
+        
     }
 
     nav{
@@ -258,6 +323,7 @@ nav ul a svg{
 
     nav ul a{
         font-size: 12px ;
+        margin: 0 10px;
     }
 
     nav ul a svg{
@@ -265,7 +331,25 @@ nav ul a svg{
         margin: 0 auto 10px;
     }
 
+
+    .about-me {
+        padding: 40px;
+    }
+
     .about-me .img-container .line{
         left: calc(50% - 40%);
+    }
+
+    .services{
+        margin-top: 50px;
+    }
+
+    .services .services-container{
+        padding: 0 50px;
+    }
+
+    .services-container .service-card  img{
+        width: 60px;
+        margin-top: 15px;
     }
 }
