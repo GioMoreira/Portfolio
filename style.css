@@ -188,13 +188,79 @@ nav ul a svg{
 .portfolio{
     padding: 0 100px;
     text-align: center;
+    background: url(assets/bg.png);
+
+    height: 800px;
+}
+
+.portfolio .portfolio-container{
+    margin-top: 120px ;
 }
 
 .portfolio img{
-    max-width: 300px;
+    width: 100%;
+    border-radius: 16PX ;
 }
 
 
+.portfolio .portfolio-container .portfolio-card{
+    background: radial-gradient(100% 100% at 0% 0%, rgba(255, 255, 255, 0.33) 0%, rgba(255, 255, 255, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(42px);
+    border-radius: 16px;
+    max-width: 360px;
+    border: 1px solid white;
+    text-align: left;
+    padding: 50px 20px;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container{
+    margin: 0 25px 50px;
+    position: relative;
+}
+
+.portfolio .portfolio-container .portfolio-card .img-container .line{
+    width: calc(100% + 20px);
+    height: calc(100% + 36px);
+    transform: rotate(-2.3deg);
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    position: absolute;
+    top: -18px;
+    left: calc(50% - 100%/2 - 10px) ;
+}
+
+.portfolio .portfolio-container .portfolio-card .lng-container ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-start;
+    padding: 0;
+
+}
+
+.portfolio .portfolio-container .portfolio-card .lng-container{
+    margin-bottom: 20px;
+}
+
+.portfolio .portfolio-container .portfolio-card .lng-container ul li{
+    color: var(--green);
+    border: 1px solid var(--green);
+    border-radius: 15px;
+    padding: 3px 15px;
+    text-align: center;
+}
+
+.portfolio-card .lng-container ul li + li{
+    margin-left: 10px;
+}
+
+.portfolio-card + .portfolio-card{
+    margin-left: 20px;
+}
+
+.portfolio-card p {
+    margin: 0;
+}
 
 
 
@@ -237,10 +303,6 @@ nav ul a svg{
         width: 100%;
     }
 
-    .services{
-        margin-top: 100px;
-    }
-
     .services .services-container{
         flex-wrap: wrap;
         flex-direction: column;
@@ -255,6 +317,8 @@ nav ul a svg{
         margin-left: 0;
         margin-top: 30px;
     }
+
+
 }
 
 /* tablet */
@@ -288,6 +352,28 @@ nav ul a svg{
         font-size: 16px;
     }
 
+    .services{
+        margin-top: 100px;
+    }
+
+    .portfolio{
+        height: 100%;
+        padding: 0;
+    }
+
+    .portfolio .portfolio-container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-card + .portfolio-card{
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
+
+
 }
 
 
@@ -297,6 +383,10 @@ nav ul a svg{
 
 
 @media(max-width:530px){
+
+    body{
+        margin-bottom: calc(var(--menu-height) + 50px);
+    }
 
     header h2{
         max-height: fit-content;
@@ -313,17 +403,20 @@ nav ul a svg{
     }
 
     nav{
-        padding: 0 15px;
+        padding: 0 10px;
         position: fixed;
         width: 100%;
         bottom: 0;
         top: unset;
-        padding: 0 15px;
+        padding: 10px 15px;
+
+
     }
 
     nav ul a{
-        font-size: 12px ;
+        font-size: 10px ;
         margin: 0 10px;
+        text-align: center;
     }
 
     nav ul a svg{
@@ -341,15 +434,19 @@ nav ul a svg{
     }
 
     .services{
-        margin-top: 50px;
+        margin: 70px 0 150px 0;
     }
 
-    .services .services-container{
+    .services .services-container, .portfolio-container{
         padding: 0 50px;
     }
 
     .services-container .service-card  img{
         width: 60px;
         margin-top: 15px;
+    }
+
+    .portfolio .portfolio-container{
+        margin-top: 70px;
     }
 }
