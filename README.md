@@ -12,7 +12,7 @@ ps. The project is not complete yet
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  -[Check it out] (#https://giomoreira.github.io/Portfolio/)
+  
   
 
 
@@ -20,6 +20,7 @@ ps. The project is not complete yet
 ## Overview
 
 This is a personal portfolio page that I created during a front-end course to practice my HTML and CSS skills.
+- Check it out: 👉🏽 https://giomoreira.github.io/Portfolio/ 👈🏽
 
 ### The challenge
 
