@@ -214,8 +214,10 @@ nav ul a svg{
 }
 
 .portfolio img{
+
     width: 100%;
     border-radius: 16PX ;
+    
 }
 
 
@@ -239,6 +241,8 @@ nav ul a svg{
 .portfolio .portfolio-container .portfolio-card .img-container{
     margin: 0 25px 50px;
     position: relative;
+    max-height: 255px;
+    max-width: 296px;
 }
 
 .portfolio .portfolio-container .portfolio-card .img-container .line{
