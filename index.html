@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-      <div class="container">
+      <div id="headerhome" class="container">
         
         <h2>Hello,</h2>
         <h1 class="title-green">I am Giovanna Moreira</h1>
@@ -25,17 +25,17 @@
     </header>
 
     <nav>
-        <img src="assets/giovanna_moreira.png" alt="">
+        <img src="assets/giovanna_moreira.png">
         <ul>
-            <a href=""><i data-feather="user"></i>Sobre</a>
-            <a href=""><i data-feather="briefcase"></i>Serviços</a>
-            <a href=""><i data-feather="image"></i>Portfólio</a>
-            <a href=""><i data-feather="list"></i>Currículo</a>
-            <a href=""><i data-feather="send"></i>Contato</a>
+            <a href="#aboutme"><i data-feather="user"></i>Sobre</a>
+            <a href="#services"><i data-feather="briefcase"></i>Serviços</a>
+            <a href="#portfolio"><i data-feather="image"></i>Portfólio</a>
+            <a href="#curriculum"><i data-feather="list"></i>Currículo</a>
+            <a href="#contact"><i data-feather="send"></i>Contato</a>
         </ul>
     </nav>
 
-    <section class="about-me">
+    <section id="aboutme" class="about-me">
       <div class="container">
         <h1 class="title-green">Sobre Mim</h1>
         <p>
@@ -57,7 +57,7 @@
       </div>
     </section>
 
-    <section class="services">
+    <section id="services" class="services">
       <h1 class="title-purple">Serviços desenvolvidos</h1>
       <div class="services-container">
         <div class="service-card">
@@ -86,25 +86,26 @@
       </div>
     </section>
 
-    <section class="portfolio">
+    <section id="portfolio" class="portfolio">
       <h1 class="title-green">Portfólio</h1>
       <div class="portfolio-container">
 
         <div class="portfolio-card">
           <div class="img-container">
             <div class="line green"></div>
-            <img src="assets/product-preview-card.jpg" alt="Imagem portfolio preview do produto"> 
+            <img src="assets/apoio-vendas-icone.png" alt="Imagem portfolio preview do produto"> 
           </div>
           <div class="lng-container">
             <ul>
               <li>html</li>
               <li>css</li>
               <li>js</li>
+              <li>c#</li>
             </ul>
           </div>
           <p><b>GitHub</b></p>
           <p>
-            Aplicação web feito para o setor de vendas. na Plaenge Empreendimentos, utilizando framework Bootstrap,
+            Aplicação web feita para o setor de vendas e adm na Plaenge Empreendimentos, utilizando framework Bootstrap,
             com HTML, CSS e JS (Ajax e jQUERY).
           </p>
         </div>
@@ -118,13 +119,13 @@
             <ul>
               <li>html</li>
               <li>css</li>
-              <li>js</li>
+              
             </ul>
           </div>
-          <p><b>GitHub</b></p>
+          <a href="https://github.com/GioMoreira/Product-Preview-Card-Challenge"><b>GitHub</b></a>
           <p>
-            Aplicação web feito para o setor de vendas. na Plaenge Empreendimentos, utilizando framework Bootstrap,
-            com HTML, CSS e JS (Ajax e jQUERY).
+            Desafio do Frontend Mentor, realizado em 30 minutos, utilizando HTML e CSS para criar 
+            um product preview.
           </p>
            
         </div>
@@ -132,7 +133,7 @@
         <div class="portfolio-card">
           <div class="img-container">
             <div class="line green"></div>
-            <img src="assets/product-preview-card.jpg" alt="Imagem portfolio preview do produto"> 
+            <img src="assets/registerform.png" alt="Imagem portfolio formulário de registro"> 
           </div>
           <div class="lng-container">
             <ul>
@@ -141,17 +142,17 @@
               <li>js</li>
             </ul>
           </div>
-          <p><b>GitHub</b></p>
+          <a href="https://github.com/GioMoreira/RegistrationForm"><b>GitHub</b></a>
           <p>
-            Aplicação web feito para o setor de vendas. na Plaenge Empreendimentos, utilizando framework Bootstrap,
-            com HTML, CSS e JS (Ajax e jQUERY).
+            Aplicação em desenvolvimento feita com Bootstrap, em ASPN.NET, que utilizará Ajax para realizar
+            cadastros de novos usuários.
           </p>
            
         </div>
 
     </section>
 
-    <section class="curriculum">
+    <section id="curriculum" class="curriculum">
       <h1 class="title-green">Currículo</h1>
       <div class="container">
         <img class="curriculum-img" src="assets/curriculo.png">
@@ -174,7 +175,7 @@
       </div>
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
       <h1>Vamos trabalhar juntos?</h1>
       <p>Se você se interessou e quer saber mais sobre meu trabalho, entre em contato comigo!</p>
       <button onclick="window.open('https://api.whatsapp.com/send?phone=5543999126351')">Entre em contato</button> 

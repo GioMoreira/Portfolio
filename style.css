@@ -230,6 +230,12 @@ nav ul a svg{
     padding: 50px 20px;
 }
 
+.portfolio .portfolio-container .portfolio-card a{
+    color: white;
+    text-decoration: none;
+}
+
+
 .portfolio .portfolio-container .portfolio-card .img-container{
     margin: 0 25px 50px;
     position: relative;
