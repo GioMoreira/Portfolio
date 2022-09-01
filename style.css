@@ -311,6 +311,29 @@ nav ul a svg{
     width: 100%;
 }
 
+.curriculum .container .content .github-info{
+    display: flex;
+    margin-top: 40px;
+    position: relative;
+
+    width: 210px;
+}
+
+.curriculum .container .content .github-info img{
+    position: absolute;
+    right: 0;
+    top: calc(50% - 16px);
+
+}
+
+
+
+.curriculum .container .content a{
+    color: var(--green);
+    text-decoration: none;
+    font-size: 18px;
+}
+
 .curriculum .container .content .curriculum-info{
     display: grid;
     grid-template-columns: 150px auto;
