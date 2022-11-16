@@ -214,6 +214,7 @@ nav ul a svg{
 
 .portfolio .portfolio-container{
     margin-top: 120px ;
+
 }
 
 .portfolio img{
@@ -221,6 +222,7 @@ nav ul a svg{
     width: 268px;
     border-radius: 16PX ;
     margin: 0 auto;
+
     
 }
 
@@ -234,6 +236,17 @@ nav ul a svg{
     border: 1px solid white;
     text-align: left;
     padding: 50px 20px;
+    mix-blend-mode: soft-light;
+    transform: translateY(15px);
+    transition: all 1.3s;
+
+}
+
+.portfolio .portfolio-container .portfolio-card:hover{
+    mix-blend-mode: normal;
+    transform: translateY(-15px);
+    transition: all 1.3s;
+    transition-timing-function: ease-in-out;
 }
 
 .portfolio .portfolio-container .portfolio-card a{
