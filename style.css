@@ -218,8 +218,8 @@ nav ul a svg{
 }
 
 .portfolio img{
-    height: 180px;
-    width: 268px;
+    height: 85%;
+    width: 100%;
     border-radius: 16PX ;
     margin: 0 auto;
 
@@ -517,7 +517,17 @@ footer{
         padding: 0 15px;
     }
 
+    .portfolio .portfolio-container .portfolio-card{
+        mix-blend-mode: normal;
+        transform: none;
+        transition: none;
+    
+    }
 
+    .portfolio .portfolio-container .portfolio-card:hover{
+        transform: none;
+        transition: none
+    }
 
 }
 
@@ -544,6 +554,7 @@ footer{
 
     header .container img{
         width: 150px;
+        margin: 30px auto;
         
     }
 
@@ -591,8 +602,35 @@ footer{
         margin-top: 15px;
     }
 
+
     .portfolio .portfolio-container{
         margin-top: 70px;
     }
 
+
+
+}
+
+@media(max-width:350px){
+    header .container img{
+        display: none;      
+    }
+
+    header .container button{
+        margin-bottom: 150px;      
+    }
+
+    .portfolio-card{
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .curriculum-info {
+        font-size: 13px;
+
+    }
+
+    .secondary-button{
+        padding: 5%;
+    }
 }
